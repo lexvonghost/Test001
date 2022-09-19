@@ -1,8 +1,24 @@
 ﻿/* Написать программу, которая, из имеющегося массива строк, формирует массив 
 из строк, длина которых меньше либо равна трём символам.*/
 
-string[] input = new string[] {"12343", ":-)", "world", "Russia", "-2"};
-string[] output = new string[5];
+Console.WriteLine("Введите количество строк:");
+int n = Convert.ToInt32(Console.ReadLine());
+string[] input = new string[n];
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine("Введите строку:");
+    string? test = Console.ReadLine();
+    if(test != null)
+    {
+        input[i] = test;
+    }
+    else
+    {
+       input[i] = "";
+    }
+}
+
+string[] output = new string[n];
 int outputIndex = 0;
 
 for (int i = 0; i < input.Length; i++)
