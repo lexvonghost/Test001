@@ -14,11 +14,12 @@ for (int i = 0; i < input.Length; i++)
     }
 }
 
+Console.WriteLine("Строки, длина которых меньше трёх:");
 Console.Write("[");
-for (int i = 0; i < output.Length; i++)
+for (int i = 0; i < outputIndex; i++)
 {
     Console.Write("'" + output[i] + "'");
-    if ( i <  output.Length - 1)
+    if ( i <  outputIndex - 1)
     {
         Console.Write(", ");
     }
