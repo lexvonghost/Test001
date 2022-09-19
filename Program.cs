@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/* Написать программу, которая, из имеющегося массива строк, формирует массив 
+из строк, длина которых меньше либо равна трём символам.*/
+
+string[] input = new string[] {"12343", ":-)", "world", "Russia", "-2"};
